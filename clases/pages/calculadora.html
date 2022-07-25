@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="../css/styles.css"> 
+    <title>Document</title> 
+</head> 
+
+<body> 
+    <header> 
+        <img src="../img/headericon.jpg" alt="" class="logo-fitness"> 
+        <nav> 
+            <ul class="lista-navegacion"> 
+                <li> 
+                    <a href="../index.html">Inicio</a> 
+                </li> 
+                <li> 
+                    <a href="programas.html">Programas</a> 
+                </li> 
+                <li> 
+                    <a href="nutricion.html">Nutricion</a> 
+                </li> 
+                <li>
+                    <a href="calculadora.html">Calculadora</a> 
+                </li> 
+                <li> 
+                    <a href="contacto.html">Contacto</a> 
+                </li> 
+            </ul> 
+        </nav> 
+    </header> 
+
+    <h1>CALCULADOR DE KCAL</h1> 
+    <form id="forma" name="forma" method="post" action="http://www.parola.com.mx/calculadora/calorias.php" class="cal-kcal"> 
+        <fieldset> 
+            <legend>Introduce tus datos</legend> 
+            <div> 
+                <label for="sexo">Sexo:</label> 
+                <input type="radio" id="sexo" name="sexo" value="Hombre" checked>Hombre 
+                <input type="radio" id="sexo" name="sexo" value="Mujer">Mujer<br> 
+            </div> 
+
+
+            <div> 
+                <label for="peso">Peso (en Kg):</label> 
+                <input type="text" id="peso" name="peso" required> 
+            </div> 
+
+
+            <div> 
+                <label for="altura">Altura (en cm):</label> 
+                <input type="text" id="altura"name="altura" required> 
+            </div> 
+
+
+            <div> 
+                <label for="edad">Edad (en A&ntilde;os):</label> 
+                <input type="text" id="edad" name="edad" required> 
+            </div> 
+
+
+            <div> 
+                <label for="tiempo">Tiempo de ejercicio diario (en minutos):</label> 
+                <input type="text" id="tiempo" name="tiempo" required> 
+            </div> 
+
+
+            <div> 
+                <label for="actividad">Nivel de actividad:</label><br> 
+                <select id="actividad" name="actividad" size="1"> 
+                    <option selected>Sedentaria (no hago ejercicio)</option> 
+                    <option>Ligera (Hago ejercicio 1-3 dias/sem)</option> 
+                    <option>Moderada (Hago ejercicio 4-5 dias/sem)</option> 
+                    <option>Intensa (Hago ejercicio 6-7 dias/sem)</option> 
+                    <option>Muy Intensa (Soy deportista de alto rendimiento)</option> 
+                </select> 
+            </div> 
+
+
+            <div> 
+                <input type="submit" id="enviar" name="enviar" value="Calcular" /> 
+            </div> 
+        </fieldset> 
+    </form> 
+
+
+<footer> 
+    <ul class="pie-final"> 
+        <li><a href="aviso-legal.html">Aviso legal</a></li> 
+        <li><a href="privacidad.html">Provacidad</a></li> 
+        <li><a href="contactar.html">Contactar</a></li> 
+    </ul> 
+</footer> 
+</body> 
+</html>     
