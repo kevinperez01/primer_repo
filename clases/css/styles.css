@@ -1,23 +1,8 @@
-header{
+.lista-navegacion{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: black;
-}
-
-body{
-    background-color: rgb(10, 9, 9);
-    background-image: url(../img/rustico2.jpg)
-}
-
-body{
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.logo-fitness{
-    width: 200px;
-    height: 150px;
 }
 
 .lista-navegacion{
@@ -33,6 +18,28 @@ body{
     text-decoration: none;
     color: antiquewhite;
 }
+
+.logo-fitness{
+    width: 200px;
+    height: 150px;
+}
+/*
+.dropdown-item{
+    color: black;
+}
+*/
+
+body{
+    background-color: rgb(10, 9, 9);
+    background-image: url(../img/rustico2.jpg)
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 
 /* inicio index*/
 .video-fitness{
@@ -254,7 +261,6 @@ img{
 /* FIN DE MOBILE FIRST */
 
 /* MOBILE FIRST DE PROGRAMAS */
-/*
 #seccionPro{
     display: grid;
     grid-template-areas: 
