@@ -16,7 +16,7 @@
 </head> 
 
 <body> 
-    <div>
+    <div id="calcualdora">
         <header> 
         <nav class="navbar navbar-expand-lg navbar-black bg-black">
             <div class="container-fluid">
@@ -33,11 +33,12 @@
                         <a class="nav-link dropdown-toggle" href="programas.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Programas
                         </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Pecho</a></li>
-                        <li><a class="dropdown-item" href="#">Pierna</a></li>
-                        <li><a class="dropdown-item" href="#">Espalda</a></li>
-                    </ul>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="pecho.html">Pecho</a></li>
+                            <li><a class="dropdown-item" href="pierna.html">Pierna</a></li>
+                            <li><a class="dropdown-item" href="espalda.html">Espalda</a></li>
+                            <li><a class="dropdown-item" href="hombros.html">Hombros</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="nutricion.html">Nutricion</a>
@@ -54,8 +55,9 @@
     </nav>
     </header> 
 
+<section id="kcal">
     <h1>CALCULADOR DE KCAL</h1>
-    <form id="forma" name="forma" method="post" action="../http://www.parola.com.mx/calculadora/calorias.php" class="cal-kcal"> 
+    <form class="form">
         <fieldset> 
             <legend>Introduce tus datos</legend> 
             <div> 
@@ -65,28 +67,23 @@
             </div> 
 
 
-            <div> 
-                <label for="peso">Peso (en Kg):</label> 
-                <input type="text" id="peso" name="peso" required> 
-            </div> 
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Peso (en kg)" aria-label="">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Altura (en cm)" aria-label="">
+                </div>
+            </div>
 
-
-            <div> 
-                <label for="altura">Altura (en cm):</label> 
-                <input type="text" id="altura"name="altura" required> 
-            </div> 
-
-
-            <div> 
-                <label for="edad">Edad (en A&ntilde;os):</label> 
-                <input type="text" id="edad" name="edad" required> 
-            </div> 
-
-
-            <div> 
-                <label for="tiempo">Tiempo de ejercicio diario (en minutos):</label> 
-                <input type="text" id="tiempo" name="tiempo" required> 
-            </div> 
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Edad" aria-label="">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Tiempo de ejercicio diario (en minutos)" aria-label="">
+                </div>
+            </div>
 
 
             <div> 
@@ -106,9 +103,10 @@
             </div> 
         </fieldset> 
     </form> 
+</section>
 
 
-<footer> 
+<footer id="pie"> 
     <ul class="pie-final"> 
         <li><a href="aviso-legal.html">Aviso legal</a></li> 
         <li><a href="privacidad.html">Provacidad</a></li> 

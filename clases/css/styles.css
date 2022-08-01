@@ -23,11 +23,7 @@
     width: 200px;
     height: 150px;
 }
-/*
-.dropdown-item{
-    color: black;
-}
-*/
+
 
 body{
     background-color: rgb(10, 9, 9);
@@ -38,7 +34,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 
 
 /* inicio index*/
@@ -90,37 +85,10 @@ p{
     transform: translate(730px);
 }
 
-.parrafo{
-    width: 50%;
-    margin: 20px auto;
-    background-color: rgb(26, 27, 31);
-    color: #fff;
-    padding: 15px;
-}
-.parrafo{
-    display: inline-block;
-    vertical-align: top;
-    transform: translate(-600px);
-}
-
 .imagen-2{
     width: 600px;
     height: 500px;
     margin: 5px;
-}
-
-.parrafo2{
-    width: 50%;
-    margin: 20px auto;
-    background-color: rgb(26, 27, 31);
-    color: #fff;
-    padding: 15px;
-}
-
-.parrafo2{
-    display: inline-block;
-    vertical-align: top;
-    transform: translate(10px);
 }
 
 .imagen-3{
@@ -128,27 +96,17 @@ p{
     height: 550px;
     transform: translate(730px);
 }
-
-.parrafo3{
-    width: 50%;
-    margin: 20px auto;
-    background-color: rgb(26, 27, 31);
-    color: #fff;
-    padding: 15px;
-}
-
-.parrafo3{
-    display: inline-block;
-    vertical-align: top;
-    transform: translate(-600px);
-}
 /* fin seccion de nutricion */
 
 
 /* inicio de calculadora */
-.cal-kcal{
+.form{
     color: antiquewhite;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form{
+    margin: 15px;
 }
 /* fin de calculadora*/
 
@@ -157,6 +115,11 @@ p{
 .contacto-1{
     color: antiquewhite;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contacto-1{
+    margin: 15px;
+
 }
 /* fin de contacto */
 
@@ -260,48 +223,30 @@ img{
 }
 /* FIN DE MOBILE FIRST */
 
-/* MOBILE FIRST DE PROGRAMAS */
-#seccionPro{
+/* MOBILE FIRST DE CALCULADORA*/
+#calculadora{
     display: grid;
     grid-template-areas: 
     "navegacion"
-    "programas"
-    "rutinas"
+    "calculadora"
+    "formulario"
     "footer";
 }
 
 header{
     grid-area: navegacion;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
-@media (min-width: 768px) {
-    #seccionPro{
-        grid-template-areas: 
-        "navegacion navegacion navegacion"
-        "programa programa programas"
-        "rutinas rutinas rutinas"
-        "footer footer footer";
-    }
-    .lista-navegacion{
-        flex-direction: row;
-    }
-    }
-
-#seccionPro{
-    grid-area: programas;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.kcal{
+    grid-area: calculadora;
 }
 
-#rutinas{
-    grid-area: rutinas;
+.form{
+    grid-area: formulario;
 }
+
 
 #footer{
     grid-area: footer;
 }
+/* FIN FIRST DE CALCULADORA*/
