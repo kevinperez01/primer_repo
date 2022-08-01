@@ -12,13 +12,12 @@
     
     <!-- CSS PROPIO -->
     <link rel="stylesheet" href="../css/styles.css"> 
-    <title>Document</title> 
+    <title>The olimpus</title> 
 </head> 
 
 <body> 
     <div>
     <header>  
-            <header> 
                 <nav class="navbar navbar-expand-lg navbar-black bg-black">
                     <div class="container-fluid">
                         <a class="logo-fitness" href=""><img src="../img/headericon.jpg" alt=""></a>
@@ -39,8 +38,8 @@
                                 <li><a class="dropdown-item" href="#">Pierna</a></li>
                                 <li><a class="dropdown-item" href="#">Espalda</a></li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
+                            </li>
+                            <li class="nav-item">
                             <a class="nav-link" href="nutricion.html">Nutricion</a>
                         </li>
                         <li class="nav-item">
@@ -59,45 +58,23 @@
             <h1>CONTACTO</h1> 
     <section> 
         <form class="contacto-1"> <!--formularios--> 
-            <fieldset> 
-                <div> 
-                    <label for="Nombre">Nombre</label> 
-                    <input type="text" id="Nombre" placeholder="Tu respuesta" required> 
-                </div> 
-            </fieldset> 
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                </div>
+            </div>
 
-
-            <fieldset> 
-                <div>  
-                    <label for="Apellido">Apellido</label> 
-                    <input type="text" id="Apellido" placeholder="Tu respuesta" required> 
-                </div> 
-            </fieldset> 
-
-
-            <fieldset> 
-                <p>Aceptas terminos y condiciones?</p> 
-                <label for="si">si</label> 
-                <input type="radio" name="condiciones" id="si"> 
-                <label for="no">no</label> 
-                <input type="radio" name="condiciones" id="no"> 
-            </fieldset> 
-
-
-            <fieldset> 
-                <div> 
-                    <label for="Correo electronico">Correo electronico</label> 
-                    <input type="email" name="" id="Correo electronico" placeholder="Direccion de correo electronico" required> 
-                </div> 
-            </fieldset> 
-
-
-            <fieldset> 
-                <div> 
-                    <label for="mensaje">mensaje</label> 
-                </div> 
-                    <textarea name="" id="" cols="30" rows="10"></textarea> 
-
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"></label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo electronico">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
 
                 <div> 
                     <!--input tyoe sumbit es el que envia la informacion--> 
